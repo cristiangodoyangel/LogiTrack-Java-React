@@ -26,7 +26,7 @@ public class Pedido {
     private String estado;
 
     @Column(name="direccion_entrega")
-    private Long direccionEntrega;
+    private String direccionEntrega;
 
     private String comuna;
     private String telefono;

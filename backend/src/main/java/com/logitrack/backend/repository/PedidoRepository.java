@@ -8,6 +8,6 @@ import java.util.List;
 
 @Repository
 public interface PedidoRepository extends JpaRepository<Pedido, Long> {
-    List<Pedido> findByChoferID(Long choferId);
+    List<Pedido> findByChoferId(Long choferId);
     List<Pedido> findByEstado(String estado);
 }

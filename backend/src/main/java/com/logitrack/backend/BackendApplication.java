@@ -10,4 +10,6 @@ public class BackendApplication {
 		SpringApplication.run(BackendApplication.class, args);
 	}
 
+    //  base de datos conectada, API post get
+
 }
