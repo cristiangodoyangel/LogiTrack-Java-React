@@ -24,6 +24,7 @@ function ListaPedidos() {
         </span>
       </div>
 
+    <div className="p-8">
       <div className="overflow-x-auto">
         <table className="min-w-full">
           <thead>
@@ -54,6 +55,7 @@ function ListaPedidos() {
           </tbody>
         </table>
       </div>
+    </div>
       
       {pedidos.length === 0 && (
         <div className="p-8 text-center text-slate-400 italic">

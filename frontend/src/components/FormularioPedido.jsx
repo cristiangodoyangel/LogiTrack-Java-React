@@ -37,10 +37,21 @@ function FormularioPedido({ alCrear }) {
   };
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-xl mb-8 border-t-4 border-sky-600">
-      <h3 className="text-xl font-bold mb-4 text-sky-600 flex items-center gap-2">
-        <span className="text-sky-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-new-section"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 12l6 0" /><path d="M12 9l0 6" /><path d="M4 6v-1a1 1 0 0 1 1 -1h1m5 0h2m5 0h1a1 1 0 0 1 1 1v1m0 5v2m0 5v1a1 1 0 0 1 -1 1h-1m-5 0h-2m-5 0h-1a1 1 0 0 1 -1 -1v-1m0 -5v-2m0 -5" /></svg></span> Nuevo Pedido
-      </h3>
+  <div className="bg-white rounded-lg shadow-xl overflow-hidden border-t-4 border-sky-600 mb-8">
+  <div className="p-4 border-b border-slate-100 flex items-center justify-between bg-slate-50">
+    <h3 className="text-xl font-bold text-sky-600 flex items-center gap-2">
+      <span className="text-sky-600">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-new-section">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M9 12l6 0" />
+          <path d="M12 9l0 6" />
+          <path d="M4 6v-1a1 1 0 0 1 1 -1h1m5 0h2m5 0h1a1 1 0 0 1 1 1v1m0 5v2m0 5v1a1 1 0 0 1 -1 1h-1m-5 0h-2m-5 0h-1a1 1 0 0 1 -1 -1v-1m0 -5v-2m0 -5" />
+        </svg>
+      </span> 
+      Nuevo Pedido
+    </h3>
+  </div>
+  <div className="p-8">
       <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-3 gap-4">
         
         <input 
@@ -63,11 +74,12 @@ function FormularioPedido({ alCrear }) {
 
         <button 
           type="submit" 
-          className="bg-slate-700 text-white font-bold py-2 px-4 rounded hover:bg-sky-600 hover:text-slate-700 transition-all shadow-md md:col-span-3 border-b-2 border-sky-500">
+          className="bg-slate-700 text-white font-bold py-2 px-4 rounded hover:bg-slate-600 hover:text-white transition-all shadow-md md:col-span-3 border-b-2 border-sky-500">
           CREAR REGISTRO
         </button>
 
       </form>
+    </div>  
     </div>
   );
 }
