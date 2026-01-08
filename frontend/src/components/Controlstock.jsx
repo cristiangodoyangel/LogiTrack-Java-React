@@ -13,14 +13,14 @@ function Controlstock() {
           onClick={() => setStock(stock + 5)}
           className="bg-sky-600 text-white px-4 py-2 rounded font-bold hover:bg-sky-700"
         >
-          AÑADIR (+1)
+          AÑADIR (+5)
         </button>
         
         <button 
           onClick={() => stock > 0 && setStock(stock - 3)}
           className={`px-4 py-2 rounded font-bold transition-all ${stock === 0 ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : 'bg-slate-700 text-white hover:bg-slate-800'}`}
         >
-          QUITAR (-1)
+          QUITAR (-3)
         </button>
       </div>
     </div>
