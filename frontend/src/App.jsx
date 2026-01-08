@@ -1,6 +1,7 @@
 import { useState } from "react"; // Importar useState
 import ListaPedidos from "./components/ListaPedidos";
 import FormularioPedido from "./components/FormularioPedido";
+import Ejercicios from "./components/Ejercicios";
 
 function App() {
   // Estado para forzar la recarga de la lista
@@ -25,6 +26,7 @@ function App() {
             aunque lo ideal es pasar el estado como prop. 
             Por ahora, solo pintemos el formulario. */}
         <ListaPedidos key={recargar} />
+        <Ejercicios />
       </div>
     </div>
   );

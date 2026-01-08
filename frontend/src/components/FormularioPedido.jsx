@@ -74,7 +74,7 @@ function FormularioPedido({ alCrear }) {
 
         <button 
           type="submit" 
-          className="bg-slate-700 text-white font-bold py-2 px-4 rounded hover:bg-slate-600 hover:text-white transition-all shadow-md md:col-span-3 border-b-2 border-sky-500">
+          className="bg-slate-700 text-white font-bold py-2 px-4 rounded hover:bg-gray-600 hover:text-white transition-all shadow-md md:col-span-3 border-b-2 border-sky-500">
           CREAR REGISTRO
         </button>
 
